@@ -1,5 +1,7 @@
 # Laravel + shadcn/ui + InertiaJS Starter Template
 
+![Laravel + shadcn/ui + InertiaJS Starter Template](https://raw.githubusercontent.com/mahmudz/laravel-shadcn-app-panel/main/public/repository-cover.png)
+
 This a template to start building a custom user/admin panel quickly.
 Feel free to customize this template to fit the specific needs and details of your Laravel application!
 

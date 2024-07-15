@@ -1,5 +1,5 @@
 import { Link, usePage } from "@inertiajs/react";
-import { Home } from "lucide-react";
+import { AlignJustifyIcon, Home, Icon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/Components/ui/button";
 import {
@@ -10,6 +10,7 @@ import {
 } from "@/Components/ui/tooltip";
 import { MenuItemProp } from "@/types";
 import ApplicationLogo from "@/Components/ApplicationLogo";
+import { ReactNode } from "react";
 
 type Props = {
     links: MenuItemProp[];
@@ -22,6 +23,8 @@ type MenuItemProps = {
 };
 
 const CollapsedMenuItem = ({ link, isActive }: MenuItemProps) => {
+    const Icon = (link.icon ?? AlignJustifyIcon) as React.ElementType;
+
     return (
         <Tooltip delayDuration={0}>
             <TooltipTrigger asChild>
@@ -37,7 +40,7 @@ const CollapsedMenuItem = ({ link, isActive }: MenuItemProps) => {
                             "dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white"
                     )}
                 >
-                    <Home className="h-4 w-4" />
+                    {<Icon className="h-4 w-4" />}
                     <span className="sr-only">{link.title}</span>
                 </Link>
             </TooltipTrigger>
@@ -49,6 +52,8 @@ const CollapsedMenuItem = ({ link, isActive }: MenuItemProps) => {
 };
 
 const ExpandedMenuItem = ({ link, isActive }: MenuItemProps) => {
+    const Icon = (link.icon ?? AlignJustifyIcon) as React.ElementType;
+
     return (
         <Link
             href={link.href}
@@ -57,14 +62,14 @@ const ExpandedMenuItem = ({ link, isActive }: MenuItemProps) => {
                 "justify-start"
             )}
         >
-            <Home className="mr-2 h-4 w-4" />
+            {<Icon className="mr-2 h-4 w-4" />}
             {link.title}
         </Link>
     );
 };
 
 const Sidebar = ({ links, isCollapsed }: Props) => {
-    const { url, component } = usePage();
+    const { url } = usePage();
 
     return (
         <TooltipProvider>

@@ -1,3 +1,6 @@
+import { LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, ReactNode, RefAttributes } from "react";
+
 export interface User {
     id: number;
     name: string;
@@ -16,6 +19,11 @@ export type PageProps<
 export type MenuItemProp = {
     title: string;
     href: string;
+    icon?:
+        | ForwardRefExoticComponent<
+              Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+          >
+        | ReactNode;
     variant:
         | "link"
         | "default"

@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactNode, useState } from "react";
 import { Link } from "@inertiajs/react";
 import { MenuItemProp, User } from "@/types";
-import { CircleUser, Search } from "lucide-react";
+import { CircleUser, Search, UserIcon } from "lucide-react";
 import { Button } from "@/Components/ui/button";
 import {
     DropdownMenu,
@@ -33,6 +33,7 @@ const links: MenuItemProp[] = [
         title: "Profile",
         href: route("profile.edit"),
         variant: "ghost",
+        icon: UserIcon,
     },
 ];
 

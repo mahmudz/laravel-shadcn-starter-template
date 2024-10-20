@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 5. Generate application key: `php artisan key:generate`
 6. Run database migrations: `php artisan migrate`
 7. Optionally, seed the database: `php artisan db:seed`
-8. Install frontend dependencies: `npm install && npm run dev` (for development) or `npm install && npm run production` (for production)
+8. Install frontend dependencies: `npm install && npm run dev` (for development) or `npm install && npm run build` (for production)
 
 ## Usage
 

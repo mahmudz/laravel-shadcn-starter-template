@@ -1,13 +1,13 @@
-import GuestLayout from "@/Layouts/GuestLayout";
+import GuestLayout from "@/layouts/guest-layout";
 import { Head, Link, useForm } from "@inertiajs/react";
 import { FormEventHandler } from "react";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
-} from "@/Components/ui/card";
+} from "@/components/ui/card";
 
 export default function VerifyEmail({ status }: { status?: string }) {
     const { post, processing } = useForm({});

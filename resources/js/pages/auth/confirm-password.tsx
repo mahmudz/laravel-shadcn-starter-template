@@ -1,5 +1,5 @@
 import { FormEventHandler, useEffect } from "react";
-import GuestLayout from "@/Layouts/GuestLayout";
+import GuestLayout from "@/layouts/guest-layout";
 import { Head, useForm } from "@inertiajs/react";
 import {
     Card,
@@ -7,11 +7,11 @@ import {
     CardDescription,
     CardFooter,
     CardHeader,
-} from "@/Components/ui/card";
-import { Label } from "@/Components/ui/label";
-import { Input } from "@/Components/ui/input";
-import { InputError } from "@/Components/ui/InputError";
-import { Button } from "@/Components/ui/button";
+} from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { InputError } from "@/components/ui/input-error";
+import { Button } from "@/components/ui/button";
 
 export default function ConfirmPassword() {
     const { data, setData, post, processing, errors, reset } = useForm({

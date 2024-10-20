@@ -1,17 +1,17 @@
 import { FormEventHandler, useEffect } from "react";
-import GuestLayout from "@/Layouts/GuestLayout";
+import GuestLayout from "@/layouts/guest-layout";
 import { Head, Link, useForm } from "@inertiajs/react";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from "@/Components/ui/card";
-import { Input } from "@/Components/ui/input";
-import { Label } from "@/Components/ui/label";
-import { InputError } from "@/Components/ui/InputError";
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { InputError } from "@/components/ui/input-error";
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({

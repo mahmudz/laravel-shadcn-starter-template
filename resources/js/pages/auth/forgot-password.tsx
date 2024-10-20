@@ -1,16 +1,16 @@
-import GuestLayout from "@/Layouts/GuestLayout";
+import GuestLayout from "@/layouts/guest-layout";
 import { Head, useForm } from "@inertiajs/react";
 import { FormEventHandler } from "react";
-import { Input } from "@/Components/ui/input";
-import { InputError } from "@/Components/ui/InputError";
-import { Button } from "@/Components/ui/button";
+import { Input } from "@/components/ui/input";
+import { InputError } from "@/components/ui/input-error";
+import { Button } from "@/components/ui/button";
 import {
     Card,
     CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
-} from "@/Components/ui/card";
+} from "@/components/ui/card";
 
 export default function ForgotPassword({ status }: { status?: string }) {
     const { data, setData, post, processing, errors } = useForm({

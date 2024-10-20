@@ -1,5 +1,5 @@
 import { FormEventHandler, useEffect } from "react";
-import GuestLayout from "@/Layouts/GuestLayout";
+import GuestLayout from "@/layouts/guest-layout";
 import { Head, Link, useForm } from "@inertiajs/react";
 import {
     Card,
@@ -7,11 +7,11 @@ import {
     CardDescription,
     CardHeader,
     CardTitle,
-} from "@/Components/ui/card";
-import { Label } from "@/Components/ui/label";
-import { Input } from "@/Components/ui/input";
-import { Button } from "@/Components/ui/button";
-import { InputError } from "@/Components/ui/InputError";
+} from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { InputError } from "@/components/ui/input-error";
 
 export default function Login({
     status,

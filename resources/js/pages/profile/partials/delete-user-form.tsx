@@ -1,9 +1,9 @@
 import { FormEventHandler, useRef, useState } from "react";
-import { InputError } from "@/Components/ui/InputError";
+import { InputError } from "@/components/ui/input-error";
 import { useForm } from "@inertiajs/react";
-import { Button } from "@/Components/ui/button";
-import { Label } from "@/Components/ui/label";
-import { Input } from "@/Components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 import {
     AlertDialog,
     AlertDialogAction,
@@ -14,7 +14,7 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-} from "@/Components/ui/alert-dialog";
+} from "@/components/ui/alert-dialog";
 
 export default function DeleteUserForm({
     className = "",
@@ -62,7 +62,7 @@ export default function DeleteUserForm({
                     </Button>
                 </AlertDialogTrigger>
 
-                <AlertDialogContent asChild>
+                <AlertDialogContent>
                     <form onSubmit={deleteUser}>
                         <AlertDialogHeader>
                             <AlertDialogTitle>
@@ -76,7 +76,7 @@ export default function DeleteUserForm({
                             </AlertDialogDescription>
                         </AlertDialogHeader>
 
-                        <div>
+                        <div className="py-4">
                             <Label htmlFor="password" className="sr-only">
                                 Password
                             </Label>

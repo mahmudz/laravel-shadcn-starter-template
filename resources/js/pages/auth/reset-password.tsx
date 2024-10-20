@@ -1,10 +1,10 @@
 import { FormEventHandler, useEffect } from "react";
-import GuestLayout from "@/Layouts/GuestLayout";
+import GuestLayout from "@/layouts/guest-layout";
 import { Head, useForm } from "@inertiajs/react";
-import { Label } from "@/Components/ui/label";
-import { Input } from "@/Components/ui/input";
-import { InputError } from "@/Components/ui/InputError";
-import { Button } from "@/Components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { InputError } from "@/components/ui/input-error";
+import { Button } from "@/components/ui/button";
 import {
     Card,
     CardContent,
@@ -12,7 +12,7 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/Components/ui/card";
+} from "@/components/ui/card";
 
 export default function ResetPassword({
     token,

@@ -1,6 +1,5 @@
 import AuthenticatedLayout from "@/layouts/authenticated-layout";
 import { Head } from "@inertiajs/react";
-import { PageProps } from "@/types";
 
 export default function Dashboard() {
     return (
